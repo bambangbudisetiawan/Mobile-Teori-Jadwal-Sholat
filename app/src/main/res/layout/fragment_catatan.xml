@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".view.fragment.CatatanFragment">
+
+    <TextView
+        android:id="@+id/tv_fr_tittle"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="bottom"
+        android:text="Judul     :"
+        android:textSize="25dp"/>
+    <TextView
+        android:id="@+id/tv_fr_note"
+        android:layout_width="120dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/tv_fr_tittle"
+        android:gravity="bottom"
+        android:text="Catatan : "
+        android:textSize="25dp"/>
+    <EditText
+        android:id="@+id/et_tittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tv_fr_tittle"
+        android:textSize="21sp"/>
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_fr_tittle"
+        android:layout_toRightOf="@id/tv_fr_note"
+        android:textSize="21sp"/>
+    <TextView
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/list_catatan"
+        android:textAlignment="center"
+        android:layout_below="@+id/tv_fr_note"
+        android:text="List Catatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:text="Set Alarm" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_fr_note"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_above="@+id/btn_submit"
+        android:layout_below="@id/list_catatan"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="0dp"
+        android:background="@android:color/holo_blue_light">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

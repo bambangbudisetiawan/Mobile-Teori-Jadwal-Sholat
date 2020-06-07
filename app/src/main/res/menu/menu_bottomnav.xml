@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_bottomnav_waktusholat"
+        android:title="Waktu sholat"
+        android:icon="@drawable/ic_access_time_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_bottomnav_catatan"
+        android:title="Catatan"
+        android:icon="@drawable/catatan"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_bottomnav_tanggal"
+        android:title="Asmaul Husna"
+        android:icon="@drawable/icon_asmaul_husna"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_bottomnav_alquran"
+        android:title="Al-Quran"
+        android:icon="@drawable/alquran_icon"
+        app:showAsAction="ifRoom"/>
+</menu>

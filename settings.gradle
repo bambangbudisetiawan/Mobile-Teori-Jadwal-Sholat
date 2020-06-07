@@ -1,0 +1,2 @@
+rootProject.name='Waktu Sholat'
+include ':app'
